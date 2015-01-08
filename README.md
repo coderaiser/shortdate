@@ -15,7 +15,7 @@ var shortdate = require('shortdate');
 
 shortdate();
 // returns
-"2015.01.08"
+'2015.01.08'
 ```
 
 ## License
