@@ -1,0 +1,22 @@
+{
+  "name": "shortdate",
+  "version": "1.0.0",
+  "description": "get short date",
+  "main": "lib/shortdate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderaiser/shortdate"
+  },
+  "keywords": [
+    "date"
+  ],
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderaiser/shortdate/issues"
+  },
+  "homepage": "https://github.com/coderaiser/shortdate"
+}
