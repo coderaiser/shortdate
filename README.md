@@ -19,7 +19,7 @@ shortdate();
 
 shortdate(new Date('9-9'));
 // returns
-'2001.09.09
+'2001.09.09'
 ```
 
 ## License
