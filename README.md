@@ -16,6 +16,10 @@ var shortdate = require('shortdate');
 shortdate();
 // returns
 '2015.01.08'
+
+shortdate(new Date('9-9'));
+// returns
+'2001.09.09'
 ```
 
 ## License
