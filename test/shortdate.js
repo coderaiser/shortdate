@@ -97,7 +97,7 @@ test('options: bad order', (t) => {
         shortdate(new Date('5-9'), {
             order: 'hello'
         });
-    }
+    };
     
     t.throws(fn, /order could be "big", "middle" and "little" only!/, 'should throw when order is not big, middle or little');
     t.end();
