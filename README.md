@@ -9,6 +9,11 @@ npm i shortdate --save
 ```
 
 ## How to use?
+`shortdate` uses arguments:
+- `date` (optional)
+- `options` (optional):
+    - `sep` - separator
+    - `order` - "big", "middle", "little" ([endian types][EndianTypes]);
 
 ```js
 var shortdate = require('shortdate');
@@ -20,6 +25,18 @@ shortdate();
 shortdate(new Date('9-9'));
 // returns
 '2001.09.09'
+
+shortdate(new Date(), {
+    sep: '/'
+});
+// returns
+'2016/02/20'
+
+shortdate(new Date(), {
+    order: 'little'
+});
+// returns
+'20.02.2016'
 ```
 
 ## License
@@ -37,3 +54,5 @@ MIT
 
 [CoverageURL]:              https://coveralls.io/github/coderaiser/shortdate?branch=master
 [CoverageIMGURL]:           https://coveralls.io/repos/coderaiser/shortdate/badge.svg?branch=master&service=github
+
+[EndianTypes]:              https://en.wikipedia.org/wiki/Date_format_by_country
