@@ -6,7 +6,7 @@
     "coderaiser <mnemonic.enemy@gmail.com>"
   ],
   "description": "get short date",
-  "main": "lib/shortdate.js",
+  "main": "dist/shortdate.min.js",
   "moduleType": [
     "globals",
     "node"
