@@ -4,14 +4,11 @@
   "description": "get short date",
   "main": "lib/shortdate.js",
   "scripts": {
-    "bundle": "browserify lib/shortdate.js -s shortdate --ng false > dist/shortdate.js",
-    "build": "npm run bundle && npm run minify",
-    "minify": "minify dist/shortdate.js > dist/shortdate.min.js",
-    "wisdom": "npm run build",
-    "codestyle": "jshint lib test && jscs --esnext lib test",
-    "coverage": "nyc npm test",
-    "report": "nyc report --reporter=text-lcov | coveralls",
-    "test": "tape test/*.js"
+    "lint": "madrun lint",
+    "fix:lint": "madrun fix:lint",
+    "coverage": "madrun coverage",
+    "report": "madrun report",
+    "test": "madrun test"
   },
   "repository": {
     "type": "git",
@@ -26,13 +23,17 @@
     "url": "https://github.com/coderaiser/shortdate/issues"
   },
   "homepage": "https://github.com/coderaiser/shortdate",
+  "engine": {
+    "node": ">=4"
+  },
   "devDependencies": {
-    "browserify": "^13.0.0",
-    "coveralls": "^2.11.6",
-    "jscs": "^2.10.1",
-    "jshint": "^2.9.1",
-    "minify": "^2.0.3",
-    "nyc": "^5.6.0",
-    "tape": "^4.4.0"
+    "coveralls": "^3.0.7",
+    "eslint": "^6.5.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-putout": "^2.0.0",
+    "madrun": "^3.0.6",
+    "nyc": "^14.1.1",
+    "putout": "^6.12.1",
+    "supertape": "^1.2.3"
   }
 }

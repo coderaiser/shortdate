@@ -5,7 +5,7 @@ Get short date. For browser and node.
 ## Install
 
 ```
-npm i shortdate --save
+npm i shortdate
 ```
 
 ## How to use?
